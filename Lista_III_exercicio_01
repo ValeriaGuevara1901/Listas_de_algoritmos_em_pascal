@@ -1,0 +1,29 @@
+program nomes;
+
+var
+nome_aluno: array [1..11] of string;
+i: integer;
+
+begin
+writeln('Por favor digite os dez nomes dos alunos');
+writeln('');
+i :=1;
+repeat
+
+	readln(nome_aluno[i]);
+	i :=(i + 1);
+
+until(i = 11);
+
+writeln('');
+writeln('Agora seram listados os nomes inseridos anteriormente: ');
+writeln('');
+i :=1;
+
+repeat
+
+	writeln(i,'._',nome_aluno[i]);
+	i :=(i + 1);
+
+until(i = 11);
+end.
