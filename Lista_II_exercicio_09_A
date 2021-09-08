@@ -1,0 +1,26 @@
+program escreve;
+
+var x,y 	: real;
+	A,B,C	: boolean;
+	V,L		: integer;
+begin
+
+A := false; {Sao as variaveis que estamos deixando com un valor fixo}
+B :=true;
+C :=false;
+X :=1.5;
+Y :=3.2;
+X :=X + 1;
+
+if (C or ((X + Y) > 5 ) or (not A and B)) then
+	begin
+		L :=0;
+		writeln(L);
+	end
+
+else 
+	begin
+		L :=1;
+		writeln(L);
+	end;
+end.
