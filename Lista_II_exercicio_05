@@ -1,0 +1,27 @@
+program fatorial;
+
+var i, num : integer;
+var c :extended;
+
+begin
+
+   c := 1;
+   writeln('Inserir o numero o qual deseja que seja feito o fatorial: ');
+   readln(num);
+
+
+if ((num = 0 ) or (num = 1)) then 
+	begin
+		writeln('O fatorial do numero ',num,' e: 1');
+	end
+else 
+	begin
+
+		for i := 1 to num do
+			begin
+				c :=(i*c);
+			end;
+	  	writeln('O fatorial do numero ',num,' e: ',c :3:2);	
+
+	end;
+end.
