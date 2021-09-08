@@ -1,0 +1,15 @@
+program NOVE;
+
+var notaA, notaB, media : real;
+
+begin 
+
+writeln('Insira as notas do aluno: ');
+readln(notaA);
+readln(notaB);
+
+media := ((notaA + notaB )/ 2 );
+
+writeln('A media do aluno e: ',media : 0 : 5);
+
+end.
