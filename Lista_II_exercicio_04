@@ -1,0 +1,15 @@
+rogram tabuada;
+
+var num, i : integer;
+
+begin 
+
+	writeln('Inserir o numero o qual deseja que seja feita sua tabuada: ');
+	readln(num);
+	writeln('A tabuada do numero digitado e : ');	
+
+	for i := 1 to 10 do
+		begin
+			writeln(num,'X',i,'=',num*i);
+		end;
+end.
