@@ -1,0 +1,31 @@
+program Teste;
+
+var i, j, s : integer;
+var A, B : Array [1..15] of integer;
+
+begin
+   	i := 1;
+   	j := 1;
+   	s := 0;
+
+   	writeln('Inserir o numero o qual deseja que seja feito o fatorial: ');
+   	for i := 1 to  15 do
+   		begin
+    		readln(A[i]);
+
+		if ((A[i] = 0 ) or (A[i] = 1)) then 
+			begin
+				writeln('O fatorial do numero inserido e: 1');
+			end
+		else 
+			begin
+				for j :=1 to 15 do
+					begin
+						B[j] :=1;
+						for s :=1 to A[i] do
+							B[j] :=( s * B[j]);
+					end;
+   				writeln('O fatorial do numero inserido e : ',B[j]);				
+			end;
+		end;
+end.
