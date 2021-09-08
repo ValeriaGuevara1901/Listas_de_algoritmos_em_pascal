@@ -1,0 +1,21 @@
+program leitura_valores_reais;
+
+var leitura_valor : array [1..11] of real;
+var i : integer;
+var media_aritmetica : real;
+
+begin 
+	writeln ('Por favor insira os valores desejado que pertenca aos numeros reais:');{a entrada de valores }
+	media_aritmetica := 0;
+
+	for i := 1 to 10 do {a contagem do indice que controla o posicionamento dentro do vetor}
+		begin {inicio}
+			readln(leitura_valor[i]);{ valor [o posicionamento do indice dentro do vetor] leitura do valor}
+			media_aritmetica := (leitura_valor[i] + media_aritmetica);{o valor ingresado, utilizamos media_aritmetica como um copo vazio
+			e dessa forma acumular em media_aritmetica a somatoria dela mesma e o valor ingresado }
+		end; {fim}
+
+	media_aritmetica := (media_aritmetica/10);
+	writeln('A media aritmetica dos valores dados anteriormente e: ',media_aritmetica : 3:2);
+
+end.
