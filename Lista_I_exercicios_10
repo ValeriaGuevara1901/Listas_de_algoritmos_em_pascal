@@ -1,0 +1,20 @@
+program troca;
+
+var a,b,c : integer;
+
+begin 
+
+
+writeln('Insira um numero a: ');
+read(a);
+writeln('Insira um numero b: ');
+read(b);
+
+c := a;
+a := b;
+b := c;
+
+writeln('Agora a: ',a);
+writeln('Agora b: ',b);
+
+end.
