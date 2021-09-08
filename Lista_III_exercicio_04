@@ -1,0 +1,27 @@
+program conteudo_impar;
+
+var A : array [1..5] of integer;
+var i : integer;
+var soma : integer;
+
+begin 
+	i :=1;
+	soma :=0;
+	writeln ('Insira o valor que deseja utilizar na matriz A (tipo vetor) :');
+	writeln('        Obs: so pode ser utilizado numeros inteiros        ');
+
+	repeat
+		readln(A[i]);
+
+	if ((A[i] mod 2) = 1) then
+
+		begin
+			soma :=(A[i] + soma);
+			writeln('O numero impar e: ',A[i]);
+		end;
+
+		i :=(i + 1);
+
+	until(i = 6);
+		writeln('A soma de todos os numeros impares digitados e: ',soma);		
+end.
