@@ -1,0 +1,34 @@
+program fibonacci;
+
+var i, f, s, p: integer;
+
+begin 
+i :=0;
+f :=1;		{Valores fixos, os quais nos ajudam para completar o primeiro repita}
+s :=0;
+
+writeln ('Os primeiros dez números da série de Fibonacci');
+
+repeat {primeiro repita o qual completa os primeiros dos números da série de fibonacci}
+
+	 s := (i + f);
+	 writeln (i,'+',f,'=',s);
+	 i := (i + 1);
+
+until(i = 2);
+
+i := 1;
+f := 2;		{Redifinindo os valores de nossas variáveis para que entrem no nosso segundo repita}
+p := 0;
+
+repeat {segundo repita que completam os outros oito números da série de fibonacci}
+
+	s := (i + f);
+	writeln (i,'+',f,'=',s);
+	i := f;
+	f := s;
+	p := (p + 1);
+
+until(p = 8); {nossocontrolador de repeticão}
+
+end.{Separei o problema em duas partes em meuentendimento ficou mais fácil de resolver }
