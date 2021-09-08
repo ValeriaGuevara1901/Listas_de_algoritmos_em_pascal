@@ -1,0 +1,14 @@
+program soma;
+
+var i, contador:integer;
+
+begin 
+contador := 0;
+	for i := 1 to 80 do {As vezes que se repete}
+		begin
+			begin
+				writeln('soma: ',contador+i); {o usuário vai ler}
+				contador := i
+			end;
+		end;
+end.	
