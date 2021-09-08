@@ -1,0 +1,14 @@
+program esfer;
+
+var raio,esfera :real;
+
+begin
+
+writeln('Por favor insira o valor do raio desejado: ');
+readln(raio);
+
+esfera := ((4*3.14*(raio*raio*raio))/3);
+
+writeln('O volume da esfera e: ', esfera :0 :5);
+
+end.
