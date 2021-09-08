@@ -1,0 +1,26 @@
+program escrita;
+
+var x : boolean;
+	y : integer;
+
+begin
+	y :=0;
+	x :=false;
+
+while (5 <> y ) do 
+
+	begin
+		x := not x;
+		y := (y+1);
+	end;
+
+if x then
+    begin
+    	writeln(y);
+    end
+
+else 
+	begin 
+		writeln(-y);
+	end;	
+end.	
