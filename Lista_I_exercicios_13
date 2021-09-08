@@ -1,0 +1,24 @@
+program triangulos;
+
+var A,B,C : integer;
+
+begin
+
+writeln ('Inserir o lado A');
+readln(A);
+writeln ('Inserir el lado B');
+readln(B);
+writeln ('Inserir el lado C');
+readln(C);
+
+if (((A = B) and (B = C ))and (A = C)) then
+	begin
+		writeln ('Este es um  triangulo Equilatero');
+	end
+else if (((A <> B) and (B <> C ))and (A <> C)) then
+	begin
+	    writeln ('Este es un triangulo escaleno');
+	end
+else 
+	writeln ('Este es umm triangulo Isosceles ');
+end.
