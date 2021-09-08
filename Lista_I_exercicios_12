@@ -1,0 +1,22 @@
+program raizes;
+
+var A,B,C,x2,x1,delta : real;
+
+begin 
+
+	writeln('Inserir o valor de A: ');
+	read(A);
+	writeln('Inserir o valor de B: ');
+	read(B);
+	writeln('Inserir o valor de C: ');
+	read(C);
+
+
+	delta := (sqr(B)- (4*A*C));
+	x1 := ((-B - (sqrt(delta)))/(2*A));
+	x2 := ((-B +(sqrt(delta)))/ (2*A));
+
+	writeln('O valor da raiz x1 e: ',x1 :0:7);
+	writeln('O valor da raiz x2 e: ',x2 :0:7);
+	
+end.
