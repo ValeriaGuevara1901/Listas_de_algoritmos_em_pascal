@@ -1,0 +1,31 @@
+program amigoschutes;
+
+var AA, AB, C : integer;
+
+begin
+	C := 0;
+	writeln('Bora a começar a brincadeira, por favor digite o numero segredo');
+	readln(AA);
+
+	repeat 
+		writeln('Digite um numero');
+		readln(AB);
+
+			if (AA = AB) then
+				begin
+					writeln('Parabens! Voce acertou o numero segredo');
+				end
+
+			else if (AA > AB) then
+				begin
+					writeln('Sue chute foi muito baixo');
+				end
+
+			else 
+				begin
+					writeln('Sue chute foi muito alto');
+				end;
+		C := (C + 1);
+	until (AA = AB);
+	writeln('Quantidade de tentativas para chegar no chute certo: ',C);
+end.
