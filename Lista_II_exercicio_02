@@ -1,0 +1,13 @@
+program impares;
+
+var i :integer;
+
+begin 
+	for i:= 2 to 15 do {As vezes que se repete}
+		begin
+			if ((i mod 2) = 1) then
+				begin
+					writeln('O numero impar e:  ',i); {o usuário vai ler}
+				end;
+		end;
+end.	
